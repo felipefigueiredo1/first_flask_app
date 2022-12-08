@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Formulario{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style>
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h3>Id</h3>
+  <p>{{employee.employee_id}}</p><hr>
+  <h3>Name</h3>
+  <p>{{employee.name}}</p><hr>
+  <h3>Age</h3>
+  <p>{{employee.age}}</p><hr>
+  <h3>Position</h3>
+  <p>{{employee.position}}</p><hr>
+{% endblock %}
